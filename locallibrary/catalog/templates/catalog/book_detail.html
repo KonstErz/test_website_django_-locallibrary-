@@ -20,4 +20,13 @@
     <p class="text-muted"><strong>Id:</strong> {{copy.id}}</p>
     {% endfor %}
   </div>
+
+  {% if user.is_staff %}
+   <hr />
+   {% if perms.catalog.can_mark_returned %}
+      <dd><a href="{% url 'book_update' book.pk %}">Change book details</a></dd>
+      <dd><a href="{% url 'book_delete' book.pk %}">Delete book</a></dd>
+   {% endif %}
+  {% endif %}
+
 {% endblock %}

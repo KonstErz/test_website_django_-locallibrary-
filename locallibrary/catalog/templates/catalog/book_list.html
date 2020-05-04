@@ -16,4 +16,12 @@
     {% else %}
       <p>There are no books in the library.</p>
     {% endif %}
+
+    {% if user.is_staff %}
+        <hr />
+        {% if perms.catalog.can_mark_returned %}
+            <a href="{% url 'book_create' %}">Create new book</a>
+        {% endif %}
+    {% endif %}
+
 {% endblock %}

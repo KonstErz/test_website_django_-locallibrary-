@@ -16,4 +16,13 @@
 </dl>
 
 </div>
+
+{% if user.is_staff %}
+   <hr />
+   {% if perms.catalog.can_mark_returned %}
+      <dd><a href="{% url 'author_update' author.pk %}">Change author details</a></dd>
+      <dd><a href="{% url 'author_delete' author.pk %}">Delete author</a></dd>
+   {% endif %}
+{% endif %}
+
 {% endblock %}
