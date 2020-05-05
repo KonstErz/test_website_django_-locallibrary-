@@ -6,3 +6,7 @@ env/
 .env
 
 *.log
+
+*.bak
+
+*.sqlite3
