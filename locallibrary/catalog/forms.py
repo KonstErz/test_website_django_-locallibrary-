@@ -5,6 +5,9 @@ import datetime
 
 
 class RenewBookForm(forms.Form):
+    """
+    Форма обновления книг для библиотекарей
+    """
     renewal_date = forms.DateField(help_text='Enter a date between now and 4 weeks (default 3).')
 
     def clean_renewal_date(self):
