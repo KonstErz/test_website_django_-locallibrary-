@@ -28,7 +28,7 @@ SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '*pjadtm=spbvm7i38+mf*@=ife(tji
 
 DEBUG = bool(os.environ.get('DJANGO_DEBUG', True))
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pacific-atoll-84292.herokuapp.com', '127.0.0.1']
 
 # Application definition
 
