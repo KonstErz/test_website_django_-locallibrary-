@@ -1,6 +1,6 @@
 # Local Library (Django)
 
-|[Русская версия](https://github.com/KonstErz/test_website_django_-locallibrary-/blob/master/README.ru.md)|
+| [Русская версия](https://github.com/KonstErz/test_website_django_-locallibrary-/blob/master/README.ru.md) |
 
 This is a small training website written in Django.
 It was created as part of the Django tutorial from [MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django).
@@ -24,7 +24,8 @@ You can run this project locally on your computer by following these steps:
 
 1. Set up the [Python development environment](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/development_environment). It's recommended using a Python virtual environment.
 2. Assuming you have Python setup, run the following commands (if you're on Windows you may use `py` or `py -3` instead of `python` to start Python):
-    
+
+    ```
     pip3 install -r requirements.txt
     python3 manage.py makemigrations
     python3 manage.py migrate
@@ -32,7 +33,8 @@ You can run this project locally on your computer by following these steps:
     python3 manage.py test      # Run the standard tests. These should all pass.
     python3 manage.py createsuperuser       # Create a superuser.
     python3 manage.py runserver
-    
+    ```
+
 3. Open a browser to `http://127.0.0.1:8000/admin/` to open the admin panel of the site.
 4. Try to create a few test objects of each type.
 5. Open tab to `http://127.0.0.1:8000` to see the main site, with your new objects.
