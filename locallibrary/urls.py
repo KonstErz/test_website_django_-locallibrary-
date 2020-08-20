@@ -19,30 +19,25 @@ from django.views.generic import RedirectView
 from django.conf import settings
 from django.conf.urls.static import static
 
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-]
-
 # Use include() to add URLs from the application directory
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 
 urlpatterns += [
-     path('catalog/', include('catalog.urls')),
+    path('catalog/', include('catalog.urls')),
 ]
-
-# Use static () to add ratios for static files
-# Only for the development period
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 # Add a ratio URL to redirect requests from the root URL to the application URL
 urlpatterns += [
     path('', RedirectView.as_view(url='/catalog/', permanent=True)),
 ]
 
-#Add Django site authentication urls (for login, logout, password management)
+# Use static () to add ratios for static files
+# Only for the development period
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Add Django site authentication urls (for login, logout, password management)
 urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls')),
 ]
