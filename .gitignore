@@ -10,3 +10,4 @@ env/
 *.bak
 
 *.sqlite3
+staticfiles/
