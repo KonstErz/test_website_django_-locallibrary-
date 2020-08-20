@@ -29,7 +29,7 @@ With python3 on your local machine, you can run this project in a virtual enviro
 + Create a folder for the project named 'test_django_project'. Go to this folder and clone the repository with the project:
 
     ```
-    git clone https://github.com/KonstErz/test_website_django_-locallibrary-.git
+    git clone https://github.com/KonstErz/test_website_django_-locallibrary-.git .
     ```
 
 + Create a virtual python3 environment in the same folder using the following command:

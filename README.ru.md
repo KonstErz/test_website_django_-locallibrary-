@@ -29,7 +29,7 @@
 + Создайте папку для проекта с названием 'test_django_project'. Перейдите в эту папку и склонируйте репозиторий с проектом:
 
     ```
-    git clone https://github.com/KonstErz/test_website_django_-locallibrary-.git
+    git clone https://github.com/KonstErz/test_website_django_-locallibrary-.git .
     ```
 
 + Создайте виртуальное python3-окружение в этой же папке с помощью следующей команды:
